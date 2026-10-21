@@ -35,8 +35,7 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "perMachine": false,
-      "createDesktopShortcut": true,
-      "buildUniversalInstaller": true
+      "createDesktopShortcut": true
     }
   },
   "devDependencies": {
