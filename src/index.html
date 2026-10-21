@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>100 Mexicanos Dijeron</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="viewport">
+  <div id="stage">
+    <div id="bgLayer"></div>
+
+    <!-- PANTALLA PRINCIPAL ANTES DE COMENZAR -->
+    <section id="title" class="screen">
+      <div id="titleLogo"></div>
+      <div id="credit"></div>
+      <div id="startHint"></div>
+    </section>
+
+    <!-- MARQUESINA -->
+    <section id="board" class="screen hidden">
+     <div id="bframe">
+      <div id="boardLogo" class="logoBar"></div>
+      <div id="qbar"></div>
+
+      <aside id="teamA" class="team a">
+        <div class="tname"><span></span></div>
+        <div class="tscore">0</div>
+        <div class="tturn"></div>
+        <ul class="players"></ul>
+      </aside>
+
+      <main id="center">
+        <div id="info"><span id="roundInfo"></span><span id="phaseInfo"></span><span id="bankInfo"></span></div>
+        <div id="rows"></div>
+        <div id="strikes"></div>
+      </main>
+
+      <aside id="teamB" class="team b">
+        <div class="tname"><span></span></div>
+        <div class="tscore">0</div>
+        <div class="tturn"></div>
+        <ul class="players"></ul>
+      </aside>
+     </div>
+    </section>
+
+    <div id="bigx" class="hidden"></div>
+    <div id="winner" class="hidden"></div>
+
+    <div id="hud">
+      <span id="voiceStatus"></span>
+      <button id="btnVoice" title="Voz">🎤</button>
+      <button id="btnFs" title="Pantalla completa">⛶</button>
+      <button id="btnMenu" title="Menú">☰</button>
+    </div>
+
+    <div id="menuOverlay" class="hidden"></div>
+    <div id="toast"></div>
+  </div>
+</div>
+<script src="questions.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
